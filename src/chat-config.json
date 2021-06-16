@@ -1,0 +1,22 @@
+{
+    "chatEngine": "mqtt",
+    "updateEngine": "native",
+    "firebaseConfig": {
+        "apiKey": "CHANGEIT",
+        "authDomain": "CHANGEIT",
+        "databaseURL": "CHANGEIT",
+        "projectId": "CHANGEIT",
+        "storageBucket": "CHANGEIT",
+        "messagingSenderId": "CHANGEIT",
+        "appId": "CHANGEIT",
+        "chat21ApiUrl": "CHANGEIT"
+    },
+    "chat21Config": {
+        "appId": "tilechat",
+        "MQTTendpoint": "mqtt://localhost:15675/ws",
+        "APIendpoint": "http://localhost:8004/api"
+    },
+    "apiUrl": "http://localhost:3000/",
+    "baseImageUrl": "https://firebasestorage.googleapis.com/v0/b/",
+    "dashboardUrl": "http://localhost:4500/"
+}

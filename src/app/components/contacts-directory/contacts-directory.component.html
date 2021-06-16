@@ -1,0 +1,20 @@
+<ion-content padding>
+  <ion-searchbar debounce="500" (ionInput)="onSearchInput($event)"></ion-searchbar>
+  <ion-list>
+    
+    <ion-item button="true" lines="none" class="ion-no-padding" *ngFor="let user of contacts" (click)="goToChat(user)">
+      <!-- <div [class.selected]="user.uid === uidUserSelected"></div> -->
+      <ion-avatar slot="start">
+        <div #avatarPlaceholder class="avatar-placeholder" [style.background-color]="user.color" [innerHTML]="user.avatar"></div>
+        <div *ngIf="user.imageurl" #avatarImage class="avatar-profile" [style.background-image]="'url(' + user.imageurl + ')'"></div>
+        <!-- <div *ngIf="getImageAvatar(conversation.sender)" #avatarImage class="avatar-profile" [style.background-image]="'url(' + getImageAvatar(conversation.sender) + ')'"></div> -->
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ user.fullname }}</h2>
+        <p>{{ user.uid }}</p>
+      </ion-label>
+      
+    </ion-item>
+
+  </ion-list>
+</ion-content>
